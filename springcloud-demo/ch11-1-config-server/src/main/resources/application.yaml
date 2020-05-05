@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/craZzoy/cloud-config.git
+          username: 1510134048@qq.com
+          password: wz3670793879
+          search-paths: SC-CONFIG
+  application:
+    name: sc-config-git
+server:
+  port: 9090

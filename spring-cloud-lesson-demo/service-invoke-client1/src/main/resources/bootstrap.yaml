@@ -1,0 +1,46 @@
+spring:
+  cloud:
+    zookeeper:
+      enabled: false
+    consul:
+      enabled: false
+
+
+#停用eureka
+eureka:
+  client:
+    enabled: false
+
+--- #eureka profiles
+spring:
+  profiles: eureka
+
+#eureka客户端配置
+eureka:
+  server:
+    host: 127.0.0.1  #自定义配置
+    port: 8080
+  client:
+    service-url:
+      defaultZone: http://${eureka.server.host}:${eureka.server.port}/eureka #连接注册eureka server中心
+    enabled: true
+    registryFetchIntervalSeconds: 5 # 5 秒轮训一次
+
+--- #zookeeper profiles
+spring:
+  profiles: zookeeper
+  cloud:
+    zookeeper:
+      enabled: true
+      connect-string: 119.23.201.241:2181
+
+---  #consul profiles
+spring:
+  profiles: consul
+  cloud:
+    consul:
+      discovery:
+        enabled: true
+        ip-address: 127.0.0.1
+        port: 8500
+      enabled: true

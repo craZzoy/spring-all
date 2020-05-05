@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8080
+
+#eureka服务端配置，提供给客户端用于注册服务
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: ${eureka.instance.hostname}:${server.port}/eureka
+    #是否注册本实例
+    register-with-eureka: false
+    #是否抓取注册的实例信息
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: false
+

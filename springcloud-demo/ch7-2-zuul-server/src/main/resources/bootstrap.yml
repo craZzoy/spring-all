@@ -1,0 +1,16 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: zuul-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.host}:127.0.0.1:${eureka.port:8080}/eureka/
+  instance:
+    prefer-ip-address: true
+zuul:
+  routes:
+    client-a:
+      path: /client/**
+      serviceId: client-a

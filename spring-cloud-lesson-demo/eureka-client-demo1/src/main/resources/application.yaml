@@ -1,0 +1,12 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: demo-client1
+eureka:
+  server:
+    hostname: localhost
+    port: 8080
+  client:
+    service-url:
+      defaultZone: ${eureka.server.localhost}:${eureka.server.port}/eureka/

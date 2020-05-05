@@ -1,0 +1,31 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/craZzoy/cloud-config.git
+          username: 1510134048@qq.com
+          password: wz3670793879
+          search-paths: SC-CONFIG
+
+    bus:
+      trace:
+        enabled: true
+
+  application:
+    name: sc-config-git
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 9090
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, refresh, bus-refresh
+  endpoint:
+    health:
+     show-details: always
