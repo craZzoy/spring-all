@@ -19,6 +19,7 @@
         <module>ch3-2-config-server</module>
         <module>ch7-2-zuul-server</module>
         <module>ch7-2-client-a</module>
+        <module>ch17-1-gateway</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

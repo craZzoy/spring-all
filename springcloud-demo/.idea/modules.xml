@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/ch11-1-config-server/ch11-1-config-server.iml" filepath="$PROJECT_DIR$/ch11-1-config-server/ch11-1-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch11-3-config-client-bus/ch11-3-config-client-bus.iml" filepath="$PROJECT_DIR$/ch11-3-config-client-bus/ch11-3-config-client-bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch11-3-config-server-bus/ch11-3-config-server-bus.iml" filepath="$PROJECT_DIR$/ch11-3-config-server-bus/ch11-3-config-server-bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch17-1-gateway/ch17-1-gateway.iml" filepath="$PROJECT_DIR$/ch17-1-gateway/ch17-1-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch3-1-config-server/ch3-1-config-server.iml" filepath="$PROJECT_DIR$/ch3-1-config-server/ch3-1-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch3-1-eureka-client/ch3-1-eureka-client.iml" filepath="$PROJECT_DIR$/ch3-1-eureka-client/ch3-1-eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch3-1-eureka-server/ch3-1-eureka-server.iml" filepath="$PROJECT_DIR$/ch3-1-eureka-server/ch3-1-eureka-server.iml" />
