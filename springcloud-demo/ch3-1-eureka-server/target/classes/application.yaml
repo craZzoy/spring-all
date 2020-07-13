@@ -1,3 +1,0 @@
-eureka:
-  server:
-    peer-eureka-nodes-update-interval-ms: 10000

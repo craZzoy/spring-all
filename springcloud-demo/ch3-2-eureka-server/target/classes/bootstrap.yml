@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: eureka-server
-  cloud:
-    config:
-      uri: http://localhost:8888/
-      name: application
-  profiles:
-    active: zone1a
