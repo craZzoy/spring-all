@@ -12,5 +12,5 @@ eureka:
 zuul:
   routes:
     client-a:
-      path: /client/**
+      path: /client/** #以此开头的请求映射到client-a(application-name)
       serviceId: client-a
