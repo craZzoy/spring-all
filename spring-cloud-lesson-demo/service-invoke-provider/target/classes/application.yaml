@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: service-invoke-provider
-
-server:
-  port: 0
