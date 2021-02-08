@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ch11-1-config-server" />
         <module name="ch3-1-config-server" />
-        <module name="ch17-1-gateway" />
         <module name="ch3-2-config-server" />
         <module name="eureka-client-demo" />
         <module name="ch3-1-eureka-server" />
@@ -16,12 +15,14 @@
         <module name="ch3-2-eureka-server" />
         <module name="ch3-2-eureka-client" />
         <module name="ch7-2-zuul-server" />
+        <module name="ch11-3-config-server-bus" />
         <module name="ch11-1-config-client" />
+        <module name="ch4-1-hello-feign" />
         <module name="ch11-3-config-client-bus" />
         <module name="ch7-2-client-a" />
         <module name="ch3-1-eureka-client" />
         <module name="ch3-2-zuul-gateway" />
-        <module name="ch11-3-config-server-bus" />
+        <module name="ch17-1-gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +38,7 @@
       <module name="ch3-2-eureka-client" target="1.8" />
       <module name="ch3-2-eureka-server" target="1.8" />
       <module name="ch3-2-zuul-gateway" target="1.8" />
+      <module name="ch4-1-hello-feign" target="1.8" />
       <module name="ch7-2-client-a" target="1.8" />
       <module name="ch7-2-zuul-server" target="1.8" />
       <module name="eureka-client-demo" target="1.8" />
@@ -58,6 +60,7 @@
       <module name="ch3-2-eureka-client" options="-parameters" />
       <module name="ch3-2-eureka-server" options="-parameters" />
       <module name="ch3-2-zuul-gateway" options="-parameters" />
+      <module name="ch4-1-hello-feign" options="-parameters" />
       <module name="ch7-2-client-a" options="-parameters" />
       <module name="ch7-2-zuul-server" options="-parameters" />
       <module name="eureka-client-demo" options="-parameters" />
