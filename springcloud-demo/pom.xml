@@ -20,6 +20,7 @@
         <module>ch7-2-zuul-server</module>
         <module>ch7-2-client-a</module>
         <module>ch17-1-gateway</module>
+        <module>ch4-1-hello-feign</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
