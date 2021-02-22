@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.common.intercepter.UserContextHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,28 +18,11 @@ import java.util.Enumeration;
 @RestController
 public class EchoController {
 
-    @Autowired
-    private RestTemplate restTemplate;
-
-    @GetMapping("/test")
+    @GetMapping("/provider/test")
     public String test(HttpServletRequest request) {
-        System.out.println("---success access test method---");
-        final Enumeration<String> headerNames = request.getHeaderNames();
-        while (headerNames.hasMoreElements()) {
-            final String s = headerNames.nextElement();
-            System.out.println(s + ": " + request.getHeader(s));
-        }
-        return "success access test method!";
-    }
-
-    /**
-     * 请求服务提供者
-     * @return
-     */
-    @RequestMapping("/accessProvider")
-    public String accessProvider(HttpServletRequest request){
-        final String forObject = restTemplate.getForObject("http://provider-service/provider/test", String.class);
-        return forObject;
+        System.out.println("auth success, the user is : " + UserContextHolder.currentUser().getUserName());
+        System.out.println("----------------success access provider service----------------");
+        return "success access provider service!";
     }
 
 }

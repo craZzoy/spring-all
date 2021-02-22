@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway
+logging:
+  level:
+    com.example: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false

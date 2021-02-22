@@ -25,6 +25,7 @@
         <module>ch15-1-core-service</module>
 		<module>ch15-1-client-service</module>
         <module>ch15-1-provider-service</module>
+        <module>ch5-1-service-a</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -56,12 +57,6 @@
 	</dependencyManagement>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -72,11 +67,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9091
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+security:
+  basic:
+    enabled: true
+logging:
+  level:
+    com.example: debug

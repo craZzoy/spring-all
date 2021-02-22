@@ -13,6 +13,12 @@
 
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>ch15-1-core-service</artifactId>

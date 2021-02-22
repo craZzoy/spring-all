@@ -9,22 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ch15-1-provider-service</artifactId>
-
-
-    <dependencies>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.example</groupId>
-            <artifactId>ch15-1-core-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <artifactId>ch5-1-service-a</artifactId>
 
 
 </project>
