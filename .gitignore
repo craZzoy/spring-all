@@ -1,0 +1,9 @@
+target
+.factorypath
+.classpath
+.project
+.settings
+*.iml
+*.ipr
+*.iws
+log.path_IS_UNDEFINED
